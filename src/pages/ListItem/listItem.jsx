@@ -133,7 +133,7 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8" data-cy="activity-item">
       <div className="flex flex-row justify-between">
         <div className="flex gap-2 font-bold text-2xl grow pr-4">
           <IconButton

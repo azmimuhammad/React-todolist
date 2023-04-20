@@ -85,7 +85,7 @@ const Dashboard = () => {
         <Grid container spacing={2}>
           {list.map((val) => {
             return (
-              <Grid item xs={12} md={3} key={val.id}>
+              <Grid item xs={12} md={3} key={val.id} data-cy="activity-item">
                 <Paper
                   elevation={3}
                   className="h-56 p-4 flex flex-col justify-between cursor-pointer"
@@ -100,7 +100,7 @@ const Dashboard = () => {
                   <div className="flex justify-between mt-4">
                     <div
                       className="text-sm text-gray-500"
-                      data-cy="activit-item-date"
+                      data-cy="activity-item-date"
                     >
                       {new Date(val.created_at).toLocaleString("id-ID", {
                         dateStyle: "medium"
