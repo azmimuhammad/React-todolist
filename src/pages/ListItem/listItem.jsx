@@ -148,12 +148,12 @@ const Dashboard = () => {
           </IconButton>
           {onEditDetail ? (
             <TextField
-              id="standard-basic"
               variant="standard"
               fullWidth
               value={detail.title}
               onChange={(e) => setDetail({...detail, title: e.target.value})}
               onBlur={() => onSubmitDetail()}
+              data-cy="todo-title"
             />
           ) : (
             <>

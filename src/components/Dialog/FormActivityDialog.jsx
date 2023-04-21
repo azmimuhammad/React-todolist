@@ -62,7 +62,11 @@ const FormActivityDialog = (props) => {
             data-cy="modal-add-priority-dropdown"
           >
             {PRIORITY.map((option) => (
-              <MenuItem value={option.value} key={option.value}>
+              <MenuItem
+                value={option.value}
+                key={option.value}
+                data-cy="modal-add-priority-item"
+              >
                 {option.label}
               </MenuItem>
             ))}

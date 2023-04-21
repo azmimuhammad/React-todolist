@@ -130,11 +130,13 @@ const Dashboard = () => {
         {...deleteData}
         onClose={() => onClearDelete()}
         onConfirm={() => onDelete()}
+        data-cy="modal-delete"
       />
       <Snackbar
         open={openSnackbar}
         autoHideDuration={1000}
         onClose={() => setOpenSnackbar(false)}
+        data-cy="modal-information"
       >
         <Alert
           onClose={() => setOpenSnackbar(false)}
