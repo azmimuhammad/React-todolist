@@ -12,12 +12,9 @@ const DeleteConfirmationDialog = (props) => {
       open={open}
       fullWidth
       maxWidth="xs"
-      data-cy="modal-information"
+      data-cy="modal-delete"
     >
-      <div
-        className="p-8 flex flex-col items-center text-center gap-8"
-        data-cy="modal-information"
-      >
+      <div className="p-8 flex flex-col items-center text-center gap-8">
         <img
           src={WarningAlertIcon}
           alt="warning-alert"

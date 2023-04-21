@@ -235,7 +235,7 @@ const Dashboard = () => {
                       type: "List Item"
                     })
                   }
-                  data-cy="todo-delete-button"
+                  data-cy="todo-item-delete-button"
                 >
                   <DeleteIcon fontSize="inherit" />
                 </IconButton>
